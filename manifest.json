@@ -1,0 +1,33 @@
+{
+  "name": "JClear - For your Mail",
+  "description": "Your go-to extension for managing your emails efficiently.",
+  "version": "1.0",
+  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "host_permissions": ["https://mail.google.com/*", "https://outlook.office.com/*"],
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "options_page": "options/options.html",
+
+  "action": {
+    "default_title": "JClear - For your Mail",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+        "16": "images/hello_extensions.png",
+        "32": "images/hello_extensions.png",
+        "48": "images/hello_extensions.png",
+        "128": "images/hello_extensions.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
+}

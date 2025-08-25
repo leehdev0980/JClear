@@ -1,0 +1,25 @@
+body{
+    min-width:320px;
+    height:400px;
+    margin:0;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-family: Arial, sans-serif;
+    background-color: #d48f8f;
+}
+h3 {
+    font-size: 20px;
+    color: #333;
+}
+#btn-group {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: silver;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
