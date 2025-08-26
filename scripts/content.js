@@ -38,9 +38,12 @@ function getEmailDetails() {
     };
 }
 
+
 chrome.runtime.onMessage.addListener((req, _sender,sendResponse) => {
     if ((req.type = "getEmails")) {
         const emailDetails = getEmailDetails();
         sendResponse({ emailDetails });
     }
+    
 })
+

@@ -23,3 +23,22 @@ h3 {
     border: none;
     border-radius: 7px;
 }
+.email-group {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.sender {
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 5px;
+}
+.subject-list {
+    list-style: none;
+    padding-left: 15px;
+}
+.count {
+    color: #666;
+    font-size: 0.9em;
+}
